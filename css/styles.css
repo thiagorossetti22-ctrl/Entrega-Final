@@ -1,0 +1,151 @@
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  background-color: #f0ead2;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #6c584c;
+}
+
+
+h1.titulo-principal {
+  color: #6c584c;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+h2 {
+  color: #adc178;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+h3, h4 {
+  color: #a98467;
+}
+
+
+.header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.header nav a {
+  text-decoration: none;
+  color: #6c584c;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 8px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.header nav a:hover {
+  background-color: #adc178;
+  color: white;
+}
+
+
+.grid-consecuencias {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  align-items: start;
+}
+
+.grid-consecuencias .imagen-grid {
+  text-align: center;
+}
+
+.grid-consecuencias .imagen-grid img {
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+
+.flex-soluciones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card-solucion {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  text-align: center;
+  max-width: 250px;
+  transition: transform 0.3s, background 0.3s;
+  opacity: 0;
+  animation: aparecer 0.8s ease forwards;
+}
+
+.card-solucion:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  background-color: #e6ccb2;
+  padding: 15px;
+  color: #6c584c;
+  font-weight: bold;
+  text-align: center;
+}
+
+footer a {
+  color: #6c584c;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+
+@media (max-width: 768px) {
+  h1.titulo-principal {
+    font-size: 1.6rem;
+  }
+
+  .grid-consecuencias {
+    padding: 10px;
+    gap: 15px;
+  }
+
+  .card-solucion {
+    max-width: 90%;
+  }
+}

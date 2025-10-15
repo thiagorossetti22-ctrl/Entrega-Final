@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Problema de Salinización de Suelos</title>
+    <meta
+      name="description"
+      content="Información sobre los problemas de salinización de suelos, sus causas, consecuencias y soluciones para mantener su productividad agrícola y ambiental."
+    />
+    <link rel="icon" href="./imagenes/icono planta.png" type="icono palnta" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container d-flex flex-column align-items-center text-center">
+        <h1 class="titulo-principal mb-3">Problemas de Suelos Salinizados</h1>
+
+        <nav
+          class="navbar navbar-expand-lg navbar-light bg-light rounded shadow p-2"
+        >
+          <div class="container">
+            <a class="navbar-brand fw-bold text-success" href="#"
+              >Suelos Salinos</a
+            >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#menuPrincipal"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div
+              class="collapse navbar-collapse justify-content-center"
+              id="menuPrincipal"
+            >
+              <ul class="navbar-nav gap-3">
+                <li class="nav-item">
+                  <a class="nav-link" href="#consecuencias">Consecuencias</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#soluciones">Soluciones</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <img
+          src="imagenes/suelo salino.jpg"
+          alt="Suelo afectado por sales"
+          class="img-fluid mt-4 rounded shadow"
+          style="max-height: 350px"
+        />
+      </div>
+    </header>
+
+    <section id="aparicion" class="container my-5 animado">
+      <h2 class="mb-3">¿Por qué sucede esto?</h2>
+      <p>
+        La salinización ocurre cuando las sales solubles (como cloruros,
+        sulfatos o carbonatos) se acumulan en el suelo en concentraciones que
+        afectan su productividad. Esto puede suceder por:
+      </p>
+      <ul>
+        <li>
+          <strong>Riego con agua salina:</strong> al evaporarse el agua, las
+          sales quedan en la superficie.
+        </li>
+        <li>
+          <strong>Mala gestión del riego:</strong> exceso de agua que eleva la
+          napa freática y arrastra sales hacia arriba.
+        </li>
+        <li>
+          <strong>Escaso drenaje:</strong> las sales no se eliminan y se
+          concentran en el perfil del suelo.
+        </li>
+        <li>
+          <strong>Procesos naturales:</strong> en zonas áridas, la alta
+          evaporación concentra las sales.
+        </li>
+      </ul>
+    </section>
+
+    <section id="consecuencias" class="container my-5 animado">
+      <h2 class="mb-4">¿Qué consecuencias trae este problema?</h2>
+      <div class="grid-consecuencias">
+        <div>
+          <h3>Para las plantas y la agricultura</h3>
+          <ul>
+            <li>
+              <strong>Disminución de la productividad agrícola:</strong> las
+              sales dificultan la absorción de agua por las raíces.
+            </li>
+            <li>
+              <strong>Toxicidad iónica:</strong> el sodio y cloruros dañan
+              directamente tejidos vegetales.
+            </li>
+            <li>
+              <strong>Menor germinación:</strong> impide la germinación de
+              semillas.
+            </li>
+            <li>
+              <strong>Crecimiento afectado:</strong> hojas amarillentas y
+              plantas débiles.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3>Para el suelo y el ambiente</h3>
+          <ul>
+            <li>
+              <strong>Pérdida de estructura:</strong> el sodio degrada la
+              estructura del suelo.
+            </li>
+            <li>
+              <strong>Erosión y desertificación:</strong> mayor vulnerabilidad a
+              viento y agua.
+            </li>
+            <li>
+              <strong>Problemas hídricos:</strong> se infiltra peor el agua y
+              genera encharcamiento.
+            </li>
+            <li>
+              <strong>Pérdida de biodiversidad:</strong> especies no toleran la
+              salinidad.
+            </li>
+          </ul>
+        </div>
+        <div class="imagen-grid">
+          <img
+            src="./imagenes/consecuencia salinizacion.jpg"
+            alt="Consecuencias de la salinización"
+            class="img-fluid rounded shadow"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="soluciones" class="container my-5 animado">
+      <h2 class="mb-4 text-center">¿Cuáles son sus posibles soluciones?</h2>
+      <div class="flex-soluciones">
+        <div class="card-solucion">
+          <h4>Lixiviación controlada</h4>
+          <p>Aplicar abundante agua para arrastrar sales a capas profundas.</p>
+        </div>
+        <div class="card-solucion">
+          <h4>Mejorar el drenaje</h4>
+          <p>Instalar drenajes o zanjas para evitar el estancamiento.</p>
+        </div>
+        <div class="card-solucion">
+          <h4>Enmiendas químicas</h4>
+          <p>Usar yeso agrícola para desplazar el sodio.</p>
+        </div>
+        <div class="card-solucion">
+          <h4>Riego eficiente</h4>
+          <p>Evitar riego excesivo, usar sistemas de goteo.</p>
+        </div>
+        <div class="card-solucion">
+          <h4>Cobertura vegetal</h4>
+          <p>Mantener el suelo cubierto para reducir evaporación y erosión.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="container my-5 animado">
+      <h2 class="text-center mb-4">Contacto</h2>
+      <form class="mx-auto" style="max-width: 500px">
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre y Apellido</label>
+          <input
+            type="text"
+            id="nombre"
+            class="form-control"
+            placeholder="Tu nombre completo"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="mensaje" class="form-label">Mensaje</label>
+          <textarea
+            id="mensaje"
+            class="form-control"
+            rows="4"
+            placeholder="Escribe tu mensaje aquí"
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-success w-100">Enviar</button>
+      </form>
+    </section>
+
+    <footer class="text-center py-3">
+      <h3 class="m-0">Todos los derechos reservados</h3>
+      <p>
+        Ver sitio en: <a href="TU_LINK_AQUI" target="_blank">Netlify/Vercel</a>
+      </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
